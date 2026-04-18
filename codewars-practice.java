@@ -6,10 +6,10 @@
 public class Kata {
 
   public static String solution(String str) {
-    if (str.length < 2){
+    if (str.length() < 2){
       return str;
     } else {
-      return str.charAt(str.length - 1) + solution(str.substring(0, str.length() - 1));
+      return str.charAt(str.length() - 1) + solution(str.substring(0, str.length() - 1));
     }
   }
 }
