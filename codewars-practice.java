@@ -9,7 +9,7 @@ public class Kata {
     if (str.length < 2){
       return str;
     } else {
-      return str.charAt(str.length - 1) + str.substring(0, str.length() - 1);
+      return str.charAt(str.length - 1) + solution(str.substring(0, str.length() - 1));
     }
   }
 }
